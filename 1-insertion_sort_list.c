@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * insertino_sort_list - will sort list using insertion sort
+ * insertion_sort_list - will sort list using insertion sort
  * @list: Ptr to head of the doubly linked list.
  */
 void insertion_sort_list(listint_t **list)
@@ -25,16 +25,12 @@ void insertion_sort_list(listint_t **list)
 				prev->prev->next = insert_pos;
 			else
 				*list = insert_pos;
-			
 			if (insert_pos->next != NULL)
 				insert_pos->next->prev = prev;
-
 			prev->next = insert_pos->next;
 			insert_pos->prev = prev->prev;
-
 			insert_pos->next = prev;
 			prev->prev = insert_pos;
-
 			print_list(*list);
 			prev = insert_pos->prev;
 		}
