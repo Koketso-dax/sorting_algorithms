@@ -2,7 +2,7 @@
 
 /**
  * bubble_sort - will sort an array using the bubble sort algorithm
- * @array: input array 
+ * @array: input array
  * @size: array size
  */
 
