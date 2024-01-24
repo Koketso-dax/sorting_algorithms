@@ -46,10 +46,10 @@ int partition(int array[], int low, int high, size_t size)
 
 /**
  * qs_helper - will apply the qs and partition algorithm recursively
- * @array:
- * @low:
- * @high:
- * @size:
+ * @array: input array
+ * @low: first value
+ * @high: last value
+ * @size: array size
  */
 void qs_helper(int array[], int low, int high, size_t size)
 {
